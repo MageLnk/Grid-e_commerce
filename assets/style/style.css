@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(20, 42, 153);
+  color: #fff;
+  text-align: center;
+}
+
+.side-bar {
+  grid-area: side-bar;
+  background-color: rgb(224, 224, 224);
+  color: black;
+  display: flexbox;
+  padding: 0rem 0rem 0rem 2rem;
+}
+.list-products {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.list-products .lighter {
+  color: rgb(140, 140, 150);
+}
+
+.products {
+  grid-area: products;
+  background-color: rgb(224, 224, 224);
+  color: black;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: end;*/
+  margin: 1rem 1rem 1rem 0rem;
+}
+.card .img-cards {
+  width: 100%;
+  height: 400px;
+}
+.card h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+.card button {
+  color: white;
+  width: 100%;
+  height: 2.5rem;
+  background-color: darkblue;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas:
+    "header header"
+    "side-bar products";
+  grid-template-rows: 4rem auto;
+  grid-template-columns: 1fr 85%;
+}
+
+.delete-borders-on-p {
+  margin: 0;
+  padding: 0;
+}
